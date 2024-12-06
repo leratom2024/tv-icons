@@ -1,0 +1,188 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header h1 {
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin: 20px 0; /* Add some space above and below the navigation */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display items inline */
+    margin: 0 10px; /* Space between buttons */
+}
+
+nav ul li a {
+    display: inline-block; /* Allow padding and background */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding for the button effect */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007BFF; /* Button background color */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Animation Keyframes for h1 */
+@keyframes moveAndChangeColor {
+    0% {
+        transform: translateX(0);
+        color: #ff0000;
+    }
+    50% {
+        transform: translateX(50px);
+        color: #00ff00;
+    }
+    100% {
+        transform: translateX(0);
+        color: #0000ff;
+    }
+}
+
+.animated-title {
+    animation: moveAndChangeColor 3s infinite;
+    font-size: 2.5em;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Shows List Styles */
+#shows ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+}
+
+#shows li {
+    margin-bottom: 15px; /* Space out the list items */
+    font-size: 1.2em; /* Slightly larger font size */
+}
+
+/* Video Styles */
+video {
+    max-width: 100%; /* Ensure the video doesn't exceed the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Spacing above the videos */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Combine borders */
+    margin-bottom: 20px; /* Space below the table */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 10px; /* Spacing inside cells */
+    text-align: center; /* Center text */
+}
+
+th {
+    background-color: #007BFF; /* Header row background */
+    color: white; /* White text */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra stripes for alternate rows */
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Light hover effect */
+}
+
+/* Form Styles */
+form {
+    max-width: 600px; /* Max width for the form */
+    margin: auto; /* Center the form */
+    padding: 20px; /* Internal padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #e9ecef; /* Light background */
+}
+
+form label {
+    display: block; /* Block display for labels */
+    margin-bottom: 10px; /* Space below labels */
+}
+
+form input, form textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Internal padding */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+form button {
+    background: #007BFF; /* Button background */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Internal padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center text */
+    padding: 15px 0; /* Padding */
+    background-color: #007BFF; /* Footer background */
+    color: white; /* Footer text color */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stay at the bottom */
+    width: 100%; /* Full width */
+}
